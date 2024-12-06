@@ -1,0 +1,159 @@
+
+body{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #000000;
+    box-sizing: border-box;
+    margin: 0;
+}
+main{
+    flex-grow: 1;
+}
+.peli{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.img{
+    width: 340px;
+    height: 480px;
+    cursor: pointer;
+    transition: 150ms ease;
+}
+.img:hover{
+    /*width: 390px;
+    height: 540px;*/
+    transform: scale(1.113, 1.113);
+}
+.h{
+    margin-top: 20px;
+    display: inline;
+    background-color: gold;
+    font-size: 50px;
+}
+header{
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 7px  5px #5c5a31;    
+    background-color: gold;
+    margin-bottom: 60px;
+}
+
+.cabeza{   
+    height: 60px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.boton{
+    margin-top: 20px;
+    display: block;
+    width: 120px;
+    height: 50px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    box-shadow:inset 10px 5px 3px #6565506c;
+    
+    animation-duration: 4s;
+    animation-name: vuelta;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: paused;
+}
+.boton:hover{
+    animation-play-state: running;
+}
+@keyframes vuelta{
+    0%{
+     
+    }
+    50%{
+        scale: 1.12;
+    }
+    100%{
+        transform: rotate(360deg);
+        border-radius: 50%;
+        scale: 1.2;
+    }
+}
+.ing{
+    color: #000000;
+    text-decoration: none;
+    font-family: sans-serif;
+    margin-top: 15px;
+    background-color: transparent;
+}
+.div-per{
+    background-color: gold;
+   
+}
+.perfil{
+    margin-top: 15px;
+    width: 65px;
+    height: 65px; 
+    border-radius: 35px;
+}
+.titulo {
+    color: white;
+    font-family: sans-serif;
+    width: 220px;
+    margin: 40px;
+
+}
+
+.box-titulos{
+    display: flex;
+    flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@media screen and (min-width: 1400px) {
+    .img{
+        width: 440px;
+        height: 580px;
+    }
+} 
+
+.footer{
+    width: 100%;
+    height: 240px;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    border: #333 solid 10px;
+}
+.icon-cine{
+    width: 200px;
+    height: 190px;
+    background-color: #333;
+}
+.mensage{
+    background-color: #333;
+    display: block;
+    font-family: fantasy;
+    font-size: small;
+    color: white;
+}
+.promocion, .box-icon, .cine-box{
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cine-box{
+    margin-top: 40px;
+}
+.mensage-grande{
+    font-size: 30px;
+    background-color: #333;
+    display: block;
+    font-style: italic;
+}
